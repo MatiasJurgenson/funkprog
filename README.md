@@ -1,0 +1,2 @@
+# funkprog
+TÜ funktsionaalne prgrameerimine
