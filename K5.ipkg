@@ -1,0 +1,2 @@
+package K5
+depends = contrib
