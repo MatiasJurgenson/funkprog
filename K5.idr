@@ -83,7 +83,7 @@ subst (Abs y e1) x e =
 
 
 lamEq : List (String,String) -> Lam -> Lam -> Bool
-lamEq v (Var x) (Var y) = elem (x, y) v || x==y
+lamEq v (Var x) (Var y) = elem (x, y) v
 lamEq v (App e1 e2) (App e3 e4) = lamEq v e1 e3 && lamEq v e2 e4
 lamEq v (Abs x e1) (Abs y e2) = 
     --let v' = (x,y) :: [(u,v) | (u,v)<-v,x/=u,y/=v] in -- <- == kuulub
